@@ -95,9 +95,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tt',
+        'NAME': 'database name',
         'USER': 'postgres',
-        'PASSWORD': 'amir4014',
+        'PASSWORD': 'your password',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
@@ -162,12 +162,13 @@ AUTH_USER_MODEL = 'accounts.User'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+# If you want use ARVAN cloud storage:
 # ARVAN CLOUD STORAGE
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# AWS_ACCESS_KEY_ID = '2df34402-0eec-428f-9a05-5989a5babfba'
-# AWS_SECRET_ACCESS_KEY = 'c8401d16abe3f30d2de6ac3f202c79026b13213cf62c6a305d62cebd0f2d3092'
+# DEFAULT_FILE_STORAGE = 'key'
+# AWS_ACCESS_KEY_ID = 'key'
+# AWS_SECRET_ACCESS_KEY = 'key'
 # AWS_S3_ENDPOINT_URL = 'https://s3.ir-thr-at1.arvanstorage.ir'
-# AWS_STORAGE_BUCKET_NAME = 'django-shop-a'
+# AWS_STORAGE_BUCKET_NAME = 'bucket name'
 # AWS_SERVICE_NAME = 's3'
 # AWS_S3_FILE_OVERWRITE = False
 
